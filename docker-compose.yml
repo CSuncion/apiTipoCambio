@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  apitipocambio:
+    image: ${DOCKER_REGISTRY-}apitipocambio
+    build:
+      context: .
+      dockerfile: ApiTipoCambio/Dockerfile
